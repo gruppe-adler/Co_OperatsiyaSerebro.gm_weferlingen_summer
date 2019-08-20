@@ -8,11 +8,11 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1496;
+		nextID=1502;
 	};
 	class MarkerIDProvider
 	{
-		nextID=7;
+		nextID=8;
 	};
 	class LayerIndexProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1047.2224,169.34193,4165.0522};
-		dir[]={-0.28902724,-0.54385942,0.78788412};
-		up[]={-0.18730825,0.83915901,0.51060164};
-		aside[]={0.93885523,-4.2840838e-007,0.34440953};
+		pos[]={18140.307,88.44072,16159.415};
+		dir[]={0.52915019,-0.5542624,-0.64262313};
+		up[]={0.35232738,0.83232534,-0.4278813};
+		aside[]={-0.77203441,-1.5540281e-006,-0.63571435};
 	};
 };
 binarizationWanted=0;
@@ -45,13 +45,15 @@ addons[]=
 	"A3_Soft_F_Exp_Truck_01",
 	"ace_realisticnames",
 	"ace_cargo",
-	"ace_captives"
+	"ace_captives",
+	"rhsgref_c_air",
+	"gm_characters_ge_characters"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=16;
+		items=18;
 		class Item0
 		{
 			className="A3_Modules_F_Heli";
@@ -161,6 +163,20 @@ class AddonsMetaData
 			name="ACE3 - Captives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
+		};
+		class Item16
+		{
+			className="rhsgref_c_air";
+			name="GREF Planes";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item17
+		{
+			className="gm_characters_ge_characters";
+			name="gm_characters_ge_characters";
+			author="Global Mobilization";
+			url="global-mobilization.com";
 		};
 	};
 };
@@ -3257,7 +3273,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=4;
+		items=9;
 		class Item0
 		{
 			dataType="Layer";
@@ -4054,7 +4070,6 @@ class Mission
 					{
 						position[]={698.09137,5,2997.4883};
 					};
-					isPlayer=1;
 					isPlayable=1;
 					id=44;
 					type="VirtualSpectator_F";
@@ -18869,6 +18884,259 @@ class Mission
 			};
 			id=731;
 			atlOffset=-110.08893;
+		};
+		class Item4
+		{
+			dataType="Marker";
+			position[]={7150.8428,134.54478,5863.7842};
+			name="marker_7";
+			type="mil_unknown";
+			id=1496;
+		};
+		class Item5
+		{
+			dataType="Marker";
+			position[]={9827.0195,93.220001,12362.07};
+			name="marker_8";
+			type="mil_unknown";
+			id=1497;
+		};
+		class Item6
+		{
+			dataType="Marker";
+			position[]={8585.5664,123.26491,8768.6143};
+			name="marker_9";
+			type="mil_unknown";
+			id=1498;
+		};
+		class Item7
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18155.043,77.831467,16141.707};
+				angles[]={6.2671809,1.2610004,6.2791882};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				textures="military";
+			};
+			id=1499;
+			type="RHS_AN2";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="VehicleCustomization";
+					expression="if (local _this) then {if (isSimpleObject _this) then {_this setVariable ['bis_fnc_initVehicle_customization',_value]} else {([_this] + _value + [true]) call (uinamespace getvariable 'bis_fnc_initVehicle');};};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+										class value
+										{
+											items=2;
+											class Item0
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="hideDoor";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=1;
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="rhs_decalNumber_type";
+					expression="if(_value != 'NoChange')then{ _this setVariable ['rhs_decalNumber_type', _value];[_this,[['Number', [3,4], _value]]] call rhs_fnc_decalsInit}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="NoChange";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="rhs_decalTail";
+					expression="[_this,[['Label', [5], 'Aviation',_value]]] call rhs_fnc_decalsInit";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit"",""Medikit""],[20,5]],[[],[]],[[],[]],[[""B_Parachute""],[16]]],false]";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="rhs_decalNumber";
+					expression="if( _value >= 0)then{if(_value == 0)then{{[_this setobjectTexture [_x,'a3\data_f\clear_empty.paa']]}foreach [3,4]}else{[_this, [['Number', [3,4], _this getVariable ['rhs_decalNumber_type','AviaCDF'], _value] ] ] call rhs_fnc_decalsInit}};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item8
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={18150.609,76.566406,16146.647};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=1501;
+					type="gm_gc_civ_man_02_80_gry";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1500;
 		};
 	};
 	class Connections
