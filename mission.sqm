@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9795.4746,123.8203,12402.138};
-		dir[]={0.84818482,-0.38124853,0.36776444};
-		up[]={0.34979802,0.92446482,0.15166882};
-		aside[]={0.39780992,1.8655555e-007,-0.9174785};
+		pos[]={9766.9492,123.8203,12381.936};
+		dir[]={0.6967662,-0.70737326,-0.11901595};
+		up[]={0.69728404,0.70682853,-0.11910454};
+		aside[]={-0.16837481,-2.1980668e-008,-0.9857353};
 	};
 };
 binarizationWanted=0;
@@ -12901,7 +12901,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9797.7656,95.988632,12380.558};
+				position[]={9792.8047,95.988121,12380.96};
 				angles[]={-0,6.082366,-0};
 			};
 			side="Civilian";
@@ -12912,7 +12912,7 @@ class Mission
 			};
 			id=1818;
 			type="RHS_Mi8AMT_vdv";
-			atlOffset=0.00077056885;
+			atlOffset=7.6293945e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -16306,7 +16306,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9797.7334,93.221497,12380.689};
+						position[]={9792.8057,93.221756,12381.119};
 						angles[]={-0,6.082366,-0};
 					};
 					side="Civilian";
@@ -16343,7 +16343,7 @@ class Mission
 				};
 			};
 			id=1948;
-			atlOffset=0.00077056885;
+			atlOffset=7.6293945e-006;
 		};
 		class Item203
 		{
