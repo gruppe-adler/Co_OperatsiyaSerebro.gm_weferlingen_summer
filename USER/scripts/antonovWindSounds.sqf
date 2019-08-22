@@ -37,7 +37,7 @@ _plane addEventHandler ["GetIn", {
 
             {
                 _x params ["_sound","_loopTime","_lastPlayedTime"];
-                if (CBA_missionTime - _lastPlayedTime > _loopTime) then {
+                if (CBA_missionTime - _lastPlayedTime > _loopTime && {speed _plane > 80}) then {
                     _helperObj say2D _sound;
                     _x set [2,CBA_missionTime];
                 };
