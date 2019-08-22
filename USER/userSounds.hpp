@@ -2,3 +2,24 @@
 *   Hier können eigene Sounds eingebunden werden.
 *   Ist in CfgSounds included.
 */
+
+class grad_wind1 {
+    name = "grad_wind1";
+    // filename, volume, pitch, distance (optional)
+    sound[] = {"USER\sounds\wind1.ogg",1,1,500};
+    titles[] = {0,""};
+};
+
+class grad_wind2 {
+    name = "grad_wind2";
+    // filename, volume, pitch, distance (optional)
+    sound[] = {"USER\sounds\wind2.ogg",0.8,1,500};
+    titles[] = {0,""};
+};
+
+class grad_wind3 {
+    name = "grad_wind3";
+    // filename, volume, pitch, distance (optional)
+    sound[] = {"USER\sounds\wind3.ogg",1,1,500};
+    titles[] = {0,""};
+};

@@ -4,6 +4,8 @@
 
 #define GLIDE_FACTOR        0.09
 
+if (!hasInterface) exitWith {};
+
 params [["_plane",objNull]];
 
 if (CBA_missionTime < 10) exitWith {

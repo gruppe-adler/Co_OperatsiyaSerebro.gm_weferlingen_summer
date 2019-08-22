@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=298;
+		nextID=314;
 	};
 	class Camera
 	{
-		pos[]={17543.307,61.901443,19030.076};
-		dir[]={-0.84830201,-0.27526525,0.45236361};
-		up[]={-0.24289209,0.96136522,0.12952355};
-		aside[]={0.47053894,1.3716635e-007,0.88238835};
+		pos[]={17550.305,87.685326,19010.729};
+		dir[]={0.31609914,-0.43769929,-0.84173959};
+		up[]={0.15387827,0.89911747,-0.40976056};
+		aside[]={-0.93617439,9.8370947e-009,-0.35156378};
 	};
 };
 binarizationWanted=0;
@@ -478,7 +478,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Scenario";
 		class Attribute0
@@ -8055,7 +8055,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{[this] execVM ""USER\scripts\antonovGlideMode.sqf""}";
+				init="call{[this] execVM ""USER\scripts\antonovGlideMode.sqf""; [this] execVM ""USER\scripts\antonovWindSounds.sqf"";}";
 				textures="military";
 			};
 			id=1681;
@@ -8154,7 +8154,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{[this] execVM ""USER\scripts\antonovGlideMode.sqf""}";
+				init="call{[this] execVM ""USER\scripts\antonovGlideMode.sqf""; [this] execVM ""USER\scripts\antonovWindSounds.sqf"";}";
 				textures="military";
 			};
 			id=1682;
