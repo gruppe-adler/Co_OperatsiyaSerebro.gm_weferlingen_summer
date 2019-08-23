@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=346;
+		nextID=362;
 	};
 	class Camera
 	{
-		pos[]={17498.467,71.834839,18984.637};
-		dir[]={0.52153563,-0.47346482,0.70992887};
-		up[]={0.28033155,0.880786,0.38159779};
-		aside[]={0.80596519,-6.5029599e-007,-0.59208536};
+		pos[]={17500.338,71.834839,19045.756};
+		dir[]={0.41553491,-0.38165477,-0.82573873};
+		up[]={0.17158592,0.92427689,-0.34096619};
+		aside[]={-0.89333922,-6.602495e-007,-0.44955444};
 	};
 };
 binarizationWanted=0;
@@ -18427,17 +18427,18 @@ class Mission
 			};
 			id=2006;
 			type="Land_MetalCase_01_large_F";
+			atlOffset=1.1444092e-005;
 		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=39;
+			nextID=42;
 		};
 		class Links
 		{
-			items=39;
+			items=42;
 			class Item0
 			{
 				linkID=0;
@@ -18822,6 +18823,36 @@ class Mission
 			{
 				linkID=38;
 				item0=1678;
+				item1=1627;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item39
+			{
+				linkID=39;
+				item0=1658;
+				item1=1627;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item40
+			{
+				linkID=40;
+				item0=1659;
+				item1=1627;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item41
+			{
+				linkID=41;
+				item0=1660;
 				item1=1627;
 				class CustomData
 				{
