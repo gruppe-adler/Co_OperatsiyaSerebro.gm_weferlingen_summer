@@ -44,15 +44,15 @@ fnc_SetPitchBankYaw = {
 };  
 
 
-private _positionLeft = [0,0,0.15];
+private _positionLeft = [0,0.28,0.4];
 
 
-private _reflectorLeftBlue = "Reflector_Cone_01_narrow_blue_F" createVehicleLocal [0,0,0];
+private _reflectorLeftBlue = "Reflector_Cone_01_wide_blue_F" createVehicleLocal [0,0,0];
 _reflectorLeftBlue attachTo [_car, _positionLeft];
 
 
 private _reflectorLeftBlue2 = "Reflector_Cone_01_wide_blue_F" createVehicleLocal [0,0,0];
-_reflectorLeftBlue attachTo [_car, _positionLeft];
+_reflectorLeftBlue2 attachTo [_car, _positionLeft];
 
 
 [{
@@ -77,7 +77,7 @@ _reflectorLeftBlue attachTo [_car, _positionLeft];
     };
 
     private _rotationLeft = _car getVariable ["rotationLeft", 0];
-    _rotationLeft = _rotationLeft + 6;
+    _rotationLeft = _rotationLeft + 8;
     _car setVariable ["rotationLeft", _rotationLeft];
    
 
