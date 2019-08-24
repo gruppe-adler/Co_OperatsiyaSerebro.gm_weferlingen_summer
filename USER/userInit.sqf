@@ -8,6 +8,7 @@ execVM "USER\scripts\configureSlingloading.sqf";
 if (isServer) then {
     {
         _x disableAI "MOVE";
+        _x action ["SwitchWeapon", _x, _x, 100]; 
     } forEach playableUnits + switchableUnits;
 };
 

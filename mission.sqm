@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=2151;
+		nextID=2164;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9036.041,159.7086,11448.519};
-		dir[]={-0.83989424,-0.53888768,-0.064689592};
-		up[]={-0.53729826,0.8423754,-0.041383304};
-		aside[]={-0.076794721,8.574716e-008,0.99704981};
+		pos[]={17605.781,80.264595,18986.977};
+		dir[]={-0.3765091,-0.52233559,-0.76515865};
+		up[]={-0.23062633,0.85272092,-0.46868885};
+		aside[]={-0.89728576,2.7936767e-007,0.44152778};
 	};
 };
 binarizationWanted=0;
@@ -90,13 +90,16 @@ addons[]=
 	"po_factions_fic",
 	"A3_Structures_F_Heli_Items_Luggage",
 	"CUP_CAMP_Armory_Misc_Red_Light",
-	"gm_vehicles_land_wheeled_p601_gc_army_p601"
+	"gm_vehicles_land_wheeled_p601_gc_army_p601",
+	"A3_Structures_F_Heli_Items_Airport",
+	"A3_Structures_F_Heli_Ind_Airport",
+	"MBG_Buildings_3"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=58;
+		items=59;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -483,6 +486,11 @@ class AddonsMetaData
 			name="gm_vehicles_land_wheeled_p601_gc_army_p601";
 			author="Global Mobilization";
 			url="global-mobilization.com";
+		};
+		class Item58
+		{
+			className="MBG_Buildings_3";
+			name="MBG_Buildings_3";
 		};
 	};
 };
@@ -3580,7 +3588,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=276;
+		items=283;
 		class Item0
 		{
 			dataType="Layer";
@@ -19038,8 +19046,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={17578.436,62.762234,18884.555};
-				angles[]={6.2812018,0,6.2812018};
+				position[]={17527.453,62.908707,18912.568};
+				angles[]={0.0056417165,0,6.2511077};
 			};
 			side="Empty";
 			flags=4;
@@ -19123,8 +19131,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={17563.023,60.577503,18981.463};
-				angles[]={0.0060039326,0,0.012007865};
+				position[]={17615.236,59.77705,18975.25};
+				angles[]={0.0080009829,0,6.2791886};
 			};
 			side="Empty";
 			flags=4;
@@ -20048,6 +20056,121 @@ class Mission
 			};
 			id=2150;
 			type="land_gm_gc_lamp_02_01";
+		};
+		class Item276
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17616.553,59.530983,19001.279};
+				angles[]={0.0099949092,0,6.2791886};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2151;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=-1.1444092e-005;
+		};
+		class Item277
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17610.082,59.721004,18995.936};
+				angles[]={0.0099949092,0,6.2791886};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2158;
+			type="PortableHelipadLight_01_white_F";
+		};
+		class Item278
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17621.084,59.687092,18994.906};
+				angles[]={0.0080009829,0,6.2791886};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2159;
+			type="PortableHelipadLight_01_white_F";
+		};
+		class Item279
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17623.162,59.577896,19005.807};
+				angles[]={0.0080009829,0,6.2812018};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2160;
+			type="PortableHelipadLight_01_white_F";
+		};
+		class Item280
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17610.236,59.595852,19008.045};
+				angles[]={0.0080009829,0,6.2812018};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2161;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=1.5258789e-005;
+		};
+		class Item281
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17596.072,60.830891,19010.4};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=2162;
+			type="Windsock_01_F";
+			atlOffset=-0.00018310547;
+		};
+		class Item282
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17629.842,64.594879,19125.139};
+				angles[]={0.0039967569,0,6.2812018};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2163;
+			type="Land_MBG_NavigLight_Red";
+			atlOffset=4.9591064e-005;
 		};
 	};
 	class Connections

@@ -65,7 +65,8 @@ class gm_volksarmee {
                 LIST_4("ACE_quikclot"),
                 LIST_4("ACE_tourniquet"),
                 LIST_2("ACE_morphine"),
-                LIST_2("ACE_epinephrine")
+                LIST_2("ACE_epinephrine"),
+                "ACE_entrenchingTool"
             };
             addItemsToVest[] = {
                 LIST_2("gm_handgrenade_frag_rgd5"),
@@ -188,12 +189,9 @@ class gm_volksarmee {
 
         //Explosive Specialist
         class soldier_exp_F: Soldier_F {
-            backpack = "SMM_Kitbag_BW_FT";
+            backpack = "gm_ge_backpack_satchel_80_blk";
             addItemsToBackpack[] = {
-                "ACE_Clacker",
-                "ACE_M26_Clacker",
-                "SatchelCharge_Remote_Mag",
-                LIST_5("DemoCharge_Remote_Mag")
+                LIST_4("rhs_ec400_mag")
             };
         };
 
@@ -271,10 +269,11 @@ class gm_volksarmee {
 
         //Repair Specialist
         class soldier_repair_F: Soldier_F {
-            backpack = "SMM_Kitbag_BW_FT";
+            backpack = "rhs_assault_umbts_engineer_empty";
             addItemsToBackpack[] = {
                 "ToolKit",
-                "ACE_wirecutter"
+                "ACE_wirecutter",
+                "ACE_entrenchingTool"
             };
         };
 
@@ -306,7 +305,7 @@ class gm_volksarmee {
         };
 
         class O_helipilot_F: Soldier_F {
-
+            headgear = "rhs_zsh7a_mike";
         };
     };
 

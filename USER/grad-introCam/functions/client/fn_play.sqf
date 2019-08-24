@@ -20,8 +20,7 @@ titleText ["","BLACK FADED",999];
         
         player setVariable ["tf_voiceVolume", 0, true];
 
-        player action ["WeaponOnBack", player];
-
+        player action ["SwitchWeapon", player, player, 100]; 
         /*
         private _viewDistanceCache = viewDistance;
         private _objectViewDistanceCache = getObjectViewDistance;
@@ -40,7 +39,6 @@ titleText ["","BLACK FADED",999];
           	[_x, _forEachIndex] call GRAD_introCam_fnc_camCommands;
         } forEach _shots;
 
-        player action ["WeaponOnBack", player];
         player action ["SwitchWeapon", player, player, 100]; 
 
         cutText [" ", "BLACK IN", 3];
