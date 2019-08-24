@@ -1,9 +1,5 @@
 params ["_light"];
 
-/*
-    optimized for GM trabant
-*/
-
 fnc_SetPitchBankYaw = { 
     private ["_object","_rotations","_aroundX","_aroundY","_aroundZ","_dirX","_dirY",
     "_dirZ","_upX","_upY","_upZ","_dir","_up","_dirXTemp","_upXTemp"];
@@ -44,7 +40,7 @@ fnc_SetPitchBankYaw = {
 };  
 
 
-private _position = [0,0.3,0.1];
+private _position = [-0.1,0,0];
 
 
 private _reflectorLeftOrange = "Reflector_Cone_01_wide_orange_F" createVehicleLocal [0,0,0];
@@ -64,7 +60,7 @@ _reflectorLeftOrange2 attachTo [_light, _position];
     ];
 
 
-    if (!(_light getVariable ["GRAD_alarmLightOn", false]) || isNull _light || !alive _light) exitWith {
+    if (!(_light getVariable ["GRAD_alarmLightOn", false]) || isNull _light) exitWith {
     
         {
           deleteVehicle _x;
@@ -79,6 +75,8 @@ _reflectorLeftOrange2 attachTo [_light, _position];
     private _rotationLeft = _light getVariable ["rotationLeft", 0];
     _rotationLeft = _rotationLeft + 1;
     _light setVariable ["rotationLeft", _rotationLeft];
+
+    // systemChat str _rotationLeft;
 
    
     [_reflectorLeftOrange,[0,0,_rotationLeft+270]] call fnc_SetPitchBankYaw;

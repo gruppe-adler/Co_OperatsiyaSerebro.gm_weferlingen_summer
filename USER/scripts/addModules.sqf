@@ -49,6 +49,7 @@ if (
   // TODO check if below is necessary to uncomment
   waitUntil {not isNil "ares_category_list"};
 
+  /*
   ["CO TAFELSILBER", "Start Alarm Light",
   {
     // Get all the passed parameters
@@ -66,6 +67,16 @@ if (
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
     alarmLight1 setVariable ["GRAD_alarmLightOn", false, true];
+
+  }] call Ares_fnc_RegisterCustomModule;
+  */
+
+  ["CO TAFELSILBER", "Unit Put Away Weapon",
+  {
+    // Get all the passed parameters
+    params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+    [[_objectUnderCursor],"USER\scripts\putAwayWeapon.sqf"] remoteExec ["BIS_fnc_execVM",2];
 
   }] call Ares_fnc_RegisterCustomModule;
 
