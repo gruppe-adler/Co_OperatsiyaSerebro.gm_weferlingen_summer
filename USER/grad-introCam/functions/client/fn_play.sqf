@@ -41,6 +41,7 @@ titleText ["","BLACK FADED",999];
         } forEach _shots;
 
         player action ["WeaponOnBack", player];
+        player action ["SwitchWeapon", player, player, 100]; 
 
         cutText [" ", "BLACK IN", 3];
         private _camera = "camera" camCreate (getpos player);

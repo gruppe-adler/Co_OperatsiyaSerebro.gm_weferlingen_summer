@@ -70,7 +70,10 @@ class gm_volksarmee {
             addItemsToVest[] = {
                 LIST_2("gm_handgrenade_frag_rgd5"),
                 LIST_2("rhs_mag_rdg2_white"),
-                LIST_7("gm_30Rnd_545x39mm_B_7N6_ak74_prp")
+                LIST_7("gm_30Rnd_545x39mm_B_7N6_ak74_prp"),
+                LIST_4("ACE_HandFlare_Green"),
+                LIST_4("ACE_HandFlare_Red"),
+                LIST_4("ACE_HandFlare_White")
             };
         };
 

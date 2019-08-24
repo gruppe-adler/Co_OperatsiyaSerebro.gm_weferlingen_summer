@@ -10,3 +10,6 @@ if (isServer) then {
         _x disableAI "MOVE";
     } forEach playableUnits + switchableUnits;
 };
+
+execVM "USER\scripts\createBorderTowers.sqf";
+execVM "USER\scripts\addModules.sqf";
