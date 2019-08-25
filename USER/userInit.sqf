@@ -12,5 +12,5 @@ if (isServer) then {
     } forEach playableUnits + switchableUnits;
 };
 
-execVM "USER\scripts\createBorderTowers.sqf";
+// execVM "USER\scripts\createBorderTowers.sqf";
 execVM "USER\scripts\addModules.sqf";
