@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=2373;
+		nextID=2375;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={18018.619,61.063026,19943.496};
-		dir[]={-0.52864498,-0.33012837,0.78203899};
-		up[]={-0.18489066,0.94393021,0.2735146};
-		aside[]={0.82848501,-3.3667311e-007,0.56004298};
+		pos[]={18019.002,62.397343,19942.361};
+		dir[]={-0.43324178,-0.68275285,0.58838183};
+		up[]={-0.40482774,0.73064578,0.54979241};
+		aside[]={0.80526996,-1.2480014e-006,0.59294593};
 	};
 };
 binarizationWanted=0;
@@ -3925,7 +3925,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=422;
+		items=421;
 		class Item0
 		{
 			dataType="Layer";
@@ -24391,13 +24391,13 @@ class Mission
 			side="Civilian";
 			class Entities
 			{
-				items=1;
+				items=2;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={18016.469,58.014214,19946.469};
+						position[]={18016.555,58.013821,19946.475};
 						angles[]={0,2.7248421,0};
 					};
 					side="Civilian";
@@ -24408,56 +24408,43 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="gm_ge_civ_uniform_blouse_80_gry";
+								typeName="gm_gc_army_uniform_dress_80_gry";
 								isBackpack=0;
 							};
 							compass="gm_ge_army_conat2";
 							watch="ItemWatch";
 							radio="ItemRadio";
 							goggles="G_Squares_Tinted";
-							headgear="rds_Woodlander_cap1";
+							headgear="gm_gc_army_headgear_cap_80_gry";
 						};
 					};
-					id=2370;
+					id=2374;
 					type="gm_gc_civ_man_02_80_gry";
 				};
-			};
-			class Attributes
-			{
-			};
-			id=2369;
-		};
-		class Item421
-		{
-			dataType="Group";
-			side="Civilian";
-			class Entities
-			{
-				items=1;
-				class Item0
+				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={18017.248,58.007969,19946.859};
+						position[]={18017.76,58.003788,19947.127};
 						angles[]={0,2.7248421,0};
 					};
 					side="Civilian";
-					flags=7;
+					flags=5;
 					class Attributes
 					{
 						class Inventory
 						{
 							class uniform
 							{
-								typeName="gm_ge_civ_uniform_blouse_80_gry";
+								typeName="gm_gc_army_uniform_dress_80_gry";
 								isBackpack=0;
 							};
 							compass="gm_ge_army_conat2";
 							watch="ItemWatch";
 							radio="ItemRadio";
 							goggles="G_Squares_Tinted";
-							headgear="rds_Woodlander_cap1";
+							headgear="rds_Woodlander_cap3";
 						};
 					};
 					id=2372;
@@ -24467,7 +24454,7 @@ class Mission
 			class Attributes
 			{
 			};
-			id=2371;
+			id=2373;
 		};
 	};
 	class Connections
