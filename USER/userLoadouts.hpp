@@ -306,9 +306,9 @@ class gm_volksarmee {
                 LIST_2("gm_handgrenade_frag_rgd5"),
                 LIST_4("rhs_mag_rdg2_white"),
                 LIST_7("rhs_30Rnd_762x39mm_bakelite_tracer"),
-                LIST_4("rhs_VG40OP_green"),
-                LIST_4("rhs_VG40OP_red"),
-                LIST_4("rhs_VG40OP_white")
+                LIST_4("rhs_GRD40_Green"),
+                LIST_4("rhs_GRD40_Red"),
+                LIST_4("rhs_GRD40_White")
             };
 
             class Rank {
@@ -326,9 +326,9 @@ class gm_volksarmee {
                 LIST_2("gm_handgrenade_frag_rgd5"),
                 LIST_4("rhs_mag_rdg2_white"),
                 LIST_7("rhs_30Rnd_762x39mm_bakelite_tracer"),
-                LIST_4("rhs_VG40OP_green"),
-                LIST_4("rhs_VG40OP_red"),
-                LIST_4("rhs_VG40OP_white")
+                LIST_4("rhs_GRD40_Green"),
+                LIST_4("rhs_GRD40_Red"),
+                LIST_4("rhs_GRD40_White")
             };
         };
 
