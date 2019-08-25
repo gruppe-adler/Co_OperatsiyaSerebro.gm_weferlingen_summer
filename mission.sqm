@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={17631.762,72.346909,18992.258};
-		dir[]={-0.89034361,-0.43757197,0.12585011};
-		up[]={-0.43326867,0.89918071,0.061242227};
-		aside[]={0.13995886,1.2168312e-007,0.9901666};
+		pos[]={17633.426,75.883293,18994.623};
+		dir[]={-0.6916278,-0.62216872,0.36682659};
+		up[]={-0.54964614,0.78288186,0.29152223};
+		aside[]={0.46855834,-5.8935257e-008,0.88343573};
 	};
 };
 binarizationWanted=0;
@@ -594,7 +594,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -23984,7 +23984,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[""FirstAidKit"",""Medikit""],[8,1]],[[""rhs_30Rnd_545x39_7N10_AK"",""rhs_mag_rgd5"",""rhs_mag_nspn_red"",""rhs_mag_rdg2_white""],[30,10,10,4]],[[""ToolKit""],[1]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[],[]],[[""TFAR_mr3000"",""TFAR_mr3000_rhs""],[1,1]]],false]";
 						};
 					};
 				};
