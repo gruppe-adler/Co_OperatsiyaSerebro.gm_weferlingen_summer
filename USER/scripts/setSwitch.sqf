@@ -26,11 +26,12 @@ _vehicle addAction [
         {
            if (typeOf _x == "land_gm_computer_teleraet_81_r" ||
             typeOf _x == "land_gm_computer_teleraet_81_m" ||
-            typeOf _x == "land_gm_computer_teleraet_81_fs") then {
-                 _x setVariable ['gm_device_enabled', false];
+            typeOf _x == "land_gm_computer_teleraet_81_fs" ||
+            typeOf _x == "land_gm_euro_furniture_lampfixture_03") then {
+                 _x setVariable ['gm_device_enabled', false, true];
                  _x enableSimulationGlobal false;
             };  
-        } forEach nearObjects 20;
+        } forEach ((position _target) nearObjects 20);
     },
     [],
     1.5, 
@@ -60,11 +61,12 @@ _vehicle addAction [
         {
            if (typeOf _x == "land_gm_computer_teleraet_81_r" ||
             typeOf _x == "land_gm_computer_teleraet_81_m" ||
-            typeOf _x == "land_gm_computer_teleraet_81_fs") then {
-                 _x setVariable ['gm_device_enabled', true];
+            typeOf _x == "land_gm_computer_teleraet_81_fs" ||
+            typeOf _x == "land_gm_euro_furniture_lampfixture_03") then {
+                 _x setVariable ['gm_device_enabled', true, true];
                   _x enableSimulationGlobal true;
             };  
-        } forEach nearObjects 20;
+        } forEach ((position _target) nearObjects 20);
     }, 
     [], 
     1.5,  

@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=2339;
+		nextID=2340;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9807.9717,95.014099,12361.713};
-		dir[]={-0.459187,-0.44450089,-0.769252};
-		up[]={-0.2278492,0.89574766,-0.38170645};
-		aside[]={-0.85872704,9.4727147e-007,0.51259136};
+		pos[]={9811.6426,95.014099,12362.081};
+		dir[]={-0.68690276,-0.24734803,-0.68349862};
+		up[]={-0.17538196,0.96889985,-0.1745144};
+		aside[]={-0.70541036,1.9348226e-006,0.70891821};
 	};
 };
 binarizationWanted=0;
@@ -3657,7 +3657,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=398;
+		items=399;
 		class Item0
 		{
 			dataType="Layer";
@@ -23499,6 +23499,22 @@ class Mission
 				};
 				nAttributes=4;
 			};
+		};
+		class Item398
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9811.1895,94.177002,12360.942};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{[this, ciaContainer] call BIS_fnc_attachToRelative; }";
+			};
+			id=2339;
+			type="land_gm_euro_furniture_lampfixture_03";
+			atlOffset=0.81200409;
 		};
 	};
 	class Connections
