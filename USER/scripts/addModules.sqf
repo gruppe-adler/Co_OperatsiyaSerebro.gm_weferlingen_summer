@@ -85,7 +85,7 @@ if (
     // Get all the passed parameters
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
-    [[ciaContainer, false],"USER\scripts\setMassUp.sqf"] remoteExec ["BIS_fnc_execVM",ciaContainer];
+    [[ciaContainer, false],"USER\scripts\setMass.sqf"] remoteExec ["BIS_fnc_execVM",ciaContainer];
 
   }] call Ares_fnc_RegisterCustomModule;
 
@@ -94,7 +94,7 @@ if (
     // Get all the passed parameters
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
-    [[ciaContainer, true],"USER\scripts\setMassUp.sqf"] remoteExec ["BIS_fnc_execVM",ciaContainer];
+    [[ciaContainer, true],"USER\scripts\setMass.sqf"] remoteExec ["BIS_fnc_execVM",ciaContainer];
 
   }] call Ares_fnc_RegisterCustomModule;
 

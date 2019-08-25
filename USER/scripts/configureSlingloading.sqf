@@ -4,8 +4,8 @@ ASL_SLING_RULES_OVERRIDE = [
     ["RHS_Mi24V_vvs", "CAN_SLING", "Land_Cargo40_grey_F"]
 ];
 
-missionNameSpace setVariable ["ASL_HEAVY_LIFTING_ENABLED", true];
-missionNameSpace setVariable ["ASL_HEAVY_LIFTING_MIN_LIFT_OVERRIDE", 0];
+missionNameSpace setVariable ["ASL_HEAVY_LIFTING_ENABLED", false];
+
 
 /*
 The MIT License (MIT)
