@@ -320,6 +320,7 @@ class gm_volksarmee {
 
         class helipilot_F: Soldier_F {
             headgear = "rhs_zsh7a_mike";
+            radio = "TFAR_fadak";
         };
     };
 

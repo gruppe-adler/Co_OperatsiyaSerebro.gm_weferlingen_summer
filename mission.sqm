@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=490;
+		nextID=506;
 	};
 	class Camera
 	{
@@ -594,7 +594,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Scenario";
 		class Attribute0
@@ -642,7 +642,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=53;
+									items=54;
 									class Item0
 									{
 										class data
@@ -1385,6 +1385,20 @@ class CustomAttributes
 											value="ace_rearm_supply";
 										};
 									};
+									class Item53
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="tfar_globalradiorangecoef";
+										};
+									};
 								};
 							};
 						};
@@ -1401,7 +1415,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=53;
+									items=54;
 									class Item0
 									{
 										class data
@@ -3768,6 +3782,51 @@ class CustomAttributes
 															};
 														};
 														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item53
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=7;
 													};
 												};
 												class Item1
@@ -11752,7 +11811,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9806.8936,93.375145,12360.364};
-				angles[]={-0,4.5182385,0};
+				angles[]={0,4.5182385,0};
 			};
 			side="Empty";
 			flags=4;
@@ -15121,7 +15180,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9814.833,93.221443,12362.979};
-						angles[]={-0,2.8412213,0};
+						angles[]={0,2.8412213,0};
 					};
 					side="Civilian";
 					flags=6;
@@ -23356,7 +23415,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9835.2578,95.394173,12372.896};
-				angles[]={-0,4.517025,0};
+				angles[]={0,4.517025,0};
 			};
 			side="Empty";
 			flags=4;
@@ -23787,7 +23846,7 @@ class Mission
 			};
 			id=2357;
 			type="land_gm_euro_furniture_lampfixture_01";
-			atlOffset=2.2336121;
+			atlOffset=2.2336044;
 		};
 		class Item414
 		{
@@ -23802,7 +23861,7 @@ class Mission
 			};
 			id=2359;
 			type="land_gm_euro_furniture_lampfixture_01";
-			atlOffset=2.386673;
+			atlOffset=2.3866806;
 		};
 		class Item415
 		{
