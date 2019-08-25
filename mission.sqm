@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=442;
+		nextID=458;
 	};
 	class Camera
 	{
-		pos[]={9807.3809,117.42497,12405.968};
-		dir[]={-0.15767759,-0.64159447,-0.75068539};
-		up[]={-0.13188794,0.76703572,-0.62790447};
-		aside[]={-0.97866225,-1.8739956e-007,0.20556377};
+		pos[]={9810.3232,142.53235,12440.344};
+		dir[]={0.021386899,-0.61488479,-0.78834158};
+		up[]={0.016675269,0.7886169,-0.61466163};
+		aside[]={-0.99964273,1.9509116e-007,-0.027118128};
 	};
 };
 binarizationWanted=0;
@@ -12765,7 +12765,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this setVariable [""GRAD_slingLoadMaxCargoMass"",100000]; this setVariable [""ASL_HEAVY_LIFTING_ENABLED"",true];}";
 				textures="LOP_SLA";
 			};
 			id=1818;
@@ -20029,7 +20028,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this setVariable [""ASL_HEAVY_LIFTING_ENABLED"",false]; this setVariable [""GRAD_slingLoadMaxCargoMass"",8000];}";
 				name="vehicle_mi24_1";
 				textures="LOP_SRI";
 				pylons="rhs_mag_b8v20a_s8df;rhs_mag_b8v20a_s8df;rhs_mag_b8v20a_s8kom;rhs_mag_b8v20a_s8kom;rhs_mag_9M120M_Mi24_2x[0];rhs_mag_9M120M_Mi24_2x[0];rhs_ASO2_CMFlare_Chaff_Magazine_x4;";

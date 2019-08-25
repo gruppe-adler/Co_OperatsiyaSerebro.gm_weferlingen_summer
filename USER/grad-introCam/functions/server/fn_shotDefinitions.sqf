@@ -40,4 +40,4 @@ private _definitions = [
   	[_x] call GRAD_introCam_fnc_addShot;
 } forEach _definitions;
 
-[] remoteExec ["GRAD_introCam_fnc_play", [0,-2] select isDedicated];
+// [] remoteExec ["GRAD_introCam_fnc_play", [0,-2] select isDedicated];
