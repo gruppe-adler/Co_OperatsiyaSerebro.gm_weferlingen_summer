@@ -4,7 +4,8 @@ class GRAD_vopo {
         file = USER\grad-vopo\functions\client;
 
         class addAction;
-        class blaulicht;
+        class blaulichtKaefer;
+        class blaulichtTrabant;
         class presston;
         class motorSirene;
     };
