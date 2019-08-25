@@ -175,7 +175,7 @@ class gm_volksarmee {
                         LIST_25("ACE_morphine"),
                         LIST_25("ACE_epinephrine")
                     };
-                }; 
+                };
                 class SERGEANT {
                     vest = "gm_ge_army_vest_80_medic";
                     backpack = "gm_gc_army_backpack_80_assaultpack_str";
@@ -318,7 +318,7 @@ class gm_volksarmee {
             };
         };
 
-        class O_helipilot_F: Soldier_F {
+        class helipilot_F: Soldier_F {
             headgear = "rhs_zsh7a_mike";
         };
     };
