@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=2370;
+		nextID=2379;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=554;
+		nextID=570;
 	};
 	class Camera
 	{
-		pos[]={9800.4502,112.20826,12403.354};
-		dir[]={0.46444842,-0.34123442,-0.81729895};
-		up[]={0.16862532,0.93995327,-0.29673192};
-		aside[]={-0.86948431,1.3055978e-007,-0.49410012};
+		pos[]={17599.576,68.475281,18967.295};
+		dir[]={0.31374791,-0.56246436,0.7649889};
+		up[]={0.21343337,0.82682067,0.52039796};
+		aside[]={0.92521369,-1.7636921e-008,-0.37946162};
 	};
 };
 binarizationWanted=0;
@@ -5629,6 +5629,7 @@ class Mission
 							class Attributes
 							{
 								init="call{if (isServer) then {private _factor = 0.2; [this,_factor] call grad_fortifications_fnc_setBuildTimeFactor; [this,_factor] call grad_fortifications_fnc_setDemolishTimeFactor; [this,_factor] call grad_fortifications_fnc_setPackUpTimeFactor};}";
+								name="grad_techniker";
 								description="Techniker";
 								isPlayable=1;
 							};
