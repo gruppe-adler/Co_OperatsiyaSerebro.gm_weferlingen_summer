@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=2344;
+		nextID=2364;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9812.374,95.891304,12349.756};
-		dir[]={-0.032516427,-0.67549586,-0.73675114};
-		up[]={-0.029784126,0.73734784,-0.67485148};
-		aside[]={-0.99909705,1.924891e-007,0.044097878};
+		pos[]={9830.9854,98.93914,12339.588};
+		dir[]={-0.95148802,-0.011889411,0.30779377};
+		up[]={-0.011421429,0.99991345,0.0036927154};
+		aside[]={0.30781037,-8.4684871e-007,0.95153916};
 	};
 };
 binarizationWanted=0;
@@ -3681,7 +3681,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=402;
+		items=419;
 		class Item0
 		{
 			dataType="Layer";
@@ -11575,7 +11575,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9806.8936,93.375145,12360.364};
-				angles[]={0,4.5182385,0};
+				angles[]={-0,4.5182385,0};
 			};
 			side="Empty";
 			flags=4;
@@ -23621,6 +23621,274 @@ class Mission
 			id=2343;
 			type="gm_placeableweapon_pzf84_oli";
 			atlOffset=0.62302399;
+		};
+		class Item402
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9811.2383,100.69,12348.66};
+				angles[]={0,6.0893283,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2345;
+			type="land_gm_euro_furniture_table_03";
+		};
+		class Item403
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9812.918,100.69,12348.973};
+				angles[]={0,6.0893283,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2346;
+			type="land_gm_euro_furniture_table_03";
+		};
+		class Item404
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9811.5498,100.69,12346.78};
+				angles[]={0,6.0893283,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2347;
+			type="land_gm_euro_furniture_table_03";
+		};
+		class Item405
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9813.2295,100.69,12347.093};
+				angles[]={0,6.0893283,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2348;
+			type="land_gm_euro_furniture_table_03";
+		};
+		class Item406
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9811.8887,100.69,12344.856};
+				angles[]={0,6.0893283,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2349;
+			type="land_gm_euro_furniture_table_03";
+		};
+		class Item407
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9813.5684,100.69,12345.169};
+				angles[]={0,6.0893283,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2350;
+			type="land_gm_euro_furniture_table_03";
+		};
+		class Item408
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9812.9336,100.69604,12348.704};
+				angles[]={0,2.9176111,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2351;
+			type="land_gm_euro_furniture_chair_04";
+		};
+		class Item409
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9811.1504,100.69604,12348.427};
+				angles[]={0,2.9176111,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2352;
+			type="land_gm_euro_furniture_chair_04";
+		};
+		class Item410
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9811.502,100.69604,12346.426};
+				angles[]={0,2.9176111,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2353;
+			type="land_gm_euro_furniture_chair_04";
+		};
+		class Item411
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9813.4248,100.69604,12346.663};
+				angles[]={0,2.9176111,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2354;
+			type="land_gm_euro_furniture_chair_04";
+		};
+		class Item412
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9811.7676,100.69604,12344.412};
+				angles[]={0,2.9176111,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2355;
+			type="land_gm_euro_furniture_chair_04";
+		};
+		class Item413
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9813.4951,100.69604,12344.708};
+				angles[]={0,2.9176111,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2356;
+			type="land_gm_euro_furniture_chair_04";
+		};
+		class Item414
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9813.7773,102.92361,12346.476};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2357;
+			type="land_gm_euro_furniture_lampfixture_01";
+			atlOffset=2.2336121;
+		};
+		class Item415
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9812.3633,103.07668,12353.511};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2359;
+			type="land_gm_euro_furniture_lampfixture_01";
+			atlOffset=2.386673;
+		};
+		class Item416
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9811.0527,99.723083,12353.7};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2361;
+			type="land_gm_euro_furniture_lampfixture_01";
+			atlOffset=2.3330765;
+		};
+		class Item417
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9813.5586,97.396042,12346.308};
+				angles[]={0,2.9176111,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2362;
+			type="land_gm_euro_furniture_chair_04";
+		};
+		class Item418
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9814.0459,99.728004,12345.598};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2363;
+			type="land_gm_euro_furniture_lampfixture_01";
+			atlOffset=2.3379974;
 		};
 	};
 	class Connections
