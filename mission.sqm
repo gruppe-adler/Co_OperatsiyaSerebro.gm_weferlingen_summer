@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9810.5811,95.388252,12361.746};
-		dir[]={-0.81683969,-0.28794608,-0.50003362};
-		up[]={-0.24563399,0.95762002,-0.15036786};
-		aside[]={-0.52214205,1.5455298e-006,0.85294878};
+		pos[]={9808.833,95.388252,12361.885};
+		dir[]={-0.79699409,-0.32788786,-0.50741589};
+		up[]={-0.27663419,0.94468778,-0.1761242};
+		aside[]={-0.53710204,1.3755634e-006,0.8436138};
 	};
 };
 binarizationWanted=0;
@@ -11664,8 +11664,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9808.1201,93.364998,12360.557};
-				angles[]={0,3.7058737,0};
+				position[]={9808.541,93.364998,12360.681};
+				angles[]={-0,3.7058737,0};
 			};
 			side="Empty";
 			flags=4;
@@ -23408,15 +23408,97 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9808.3711,93.364998,12361.459};
+				position[]={9807.6006,94.787003,12360.719};
+				angles[]={0,4.5141897,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
+				init="call{[this, ciaContainer] call BIS_fnc_attachToRelative;}";
 			};
 			id=2338;
 			type="Land_TransferSwitch_01_F";
+			atlOffset=1.4220047;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="SwitchLightOn";
+					expression="_this animateSource ['SwitchLight',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Power_2_param";
+					expression="_this animateSource ['Power_2',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="SwitchPosition";
+					expression="_this animateSource ['SwitchPosition',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=-1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Power_1_param";
+					expression="_this animateSource ['Power_1',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=4;
+			};
 		};
 	};
 	class Connections
