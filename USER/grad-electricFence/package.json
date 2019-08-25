@@ -1,0 +1,11 @@
+{
+    "name": "grad-electricFence",
+    "contributors": [
+        {
+            "name": "McDiod",
+            "name": "nomisum"
+        }
+    ],
+    "description": "Library for electrifying fences.",
+    "version": "0.0.1"
+}

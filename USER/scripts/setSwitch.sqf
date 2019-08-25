@@ -11,6 +11,14 @@ SwitchPosition
 
 params ["_vehicle"];
 
+if (isServer) then {
+    _vehicle animate ["Power_1", 1];  
+    _vehicle animate ["Power_2", 1];  
+    _vehicle animate ["SwitchLight", 0.1];  
+    _vehicle animate ["SwitchPosition", -1]; 
+    _vehicle setVariable ['GRAD_hasPower', true, true];
+};
+
 _vehicle addAction [
     "<t color='#333399'>Rechner ausschalten</t>", {
         params ["_target", "_caller", "_actionId", "_arguments"];
@@ -21,7 +29,8 @@ _vehicle addAction [
         _target animate ["SwitchLight", 0];
         _target animate ["SwitchPosition", 1];
 
-        systemChat "off";
+        // systemChat "off";
+
 
         {
            if (typeOf _x == "land_gm_computer_teleraet_81_r" ||
@@ -30,7 +39,9 @@ _vehicle addAction [
             typeOf _x == "land_gm_euro_furniture_lampfixture_03") then {
                  _x setVariable ['gm_device_enabled', false, true];
                  _x enableSimulationGlobal false;
-            };  
+
+                 [_x, position _x] spawn GRAD_electricFence_fnc_sparkLarge;
+            };
         } forEach ((position _target) nearObjects 20);
     },
     [],
@@ -55,7 +66,7 @@ _vehicle addAction [
         _target animate ["SwitchLight", 0.1]; 
         _target animate ["SwitchPosition", -1]; 
 
-        systemChat "on";
+        // systemChat "on";
 
 
         {

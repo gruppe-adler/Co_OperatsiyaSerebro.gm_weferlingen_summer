@@ -5,3 +5,4 @@
 
 #include "grad-introCam\cfgFunctions.hpp"
 #include "grad-vopo\cfgFunctions.hpp"
+#include "grad-electricFence\cfgFunctions.hpp"

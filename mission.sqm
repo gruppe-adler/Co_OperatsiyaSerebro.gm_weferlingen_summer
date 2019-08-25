@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=474;
+		nextID=490;
 	};
 	class Camera
 	{
-		pos[]={9811.6426,95.014099,12362.081};
-		dir[]={-0.68690276,-0.24734803,-0.68349862};
-		up[]={-0.17538196,0.96889985,-0.1745144};
-		aside[]={-0.70541036,1.9348226e-006,0.70891821};
+		pos[]={9831.2588,97.317711,12360.977};
+		dir[]={-0.14132868,-0.37914002,0.91451836};
+		up[]={-0.05790817,0.92532426,0.37471747};
+		aside[]={0.98829514,-6.3842162e-007,0.15272868};
 	};
 };
 binarizationWanted=0;
@@ -11550,8 +11550,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9806.8936,93.37516,12360.364};
-				angles[]={0,4.5182328,0};
+				position[]={9806.8936,93.375145,12360.364};
+				angles[]={0,4.5182385,0};
 			};
 			side="Empty";
 			flags=4;
@@ -11561,7 +11561,6 @@ class Mission
 			};
 			id=1779;
 			type="land_gm_computer_teleraet_81_r";
-			atlOffset=1.5258789e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11665,7 +11664,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9808.541,93.364998,12360.681};
-				angles[]={-0,3.7058737,0};
+				angles[]={0,3.7058737,0};
 			};
 			side="Empty";
 			flags=4;
@@ -11772,6 +11771,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{[this, 0] call GRAD_electricFence_fnc_addFencePart;}";
 				disableSimulation=1;
 			};
 			id=1798;
@@ -11850,6 +11850,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{[this, 0] call GRAD_electricFence_fnc_addFencePart;}";
 				disableSimulation=1;
 			};
 			id=1799;
@@ -12005,6 +12006,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{[this, 0] call GRAD_electricFence_fnc_addFencePart;}";
 			};
 			id=1801;
 			type="PowerCable_01_CurveLong_F";
@@ -14043,12 +14045,13 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9800.9336,96.782883,12363.591};
+				position[]={9800.9336,96.782883,12363.59};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{[this, 0] call GRAD_electricFence_fnc_addFencePart;}";
 			};
 			id=1874;
 			type="Land_Antenna";
@@ -15133,8 +15136,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9810.7256,93.36644,12362.011};
-						angles[]={0,2.8412213,0};
+						position[]={9814.833,93.221443,12362.979};
+						angles[]={-0,2.8412213,0};
 					};
 					side="Civilian";
 					flags=6;
@@ -16732,6 +16735,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				init="call{[this, 0] call GRAD_electricFence_fnc_addFencePart;}";
 			};
 			id=1986;
 			type="jbad_Misc_Cable";
@@ -16742,12 +16746,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9821.6338,97.589417,12361.198};
-				angles[]={0,2.7352016,0};
+				angles[]={0,2.7351925,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				init="call{[this, 0] call GRAD_electricFence_fnc_addFencePart;}";
 			};
 			id=1989;
 			type="jbad_Misc_Cable";
@@ -19446,16 +19451,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9831.2852,95.175415,12367.612};
-				angles[]={0,2.9549341,0};
+				position[]={9831.2852,95.174934,12367.612};
+				angles[]={0,2.9549296,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
+				init="call{[this, 0] call GRAD_electricFence_fnc_addGenerator;}";
 			};
 			id=2164;
 			type="Land_DieselGroundPowerUnit_01_F";
+			atlOffset=1.1070023;
 		};
 		class Item275
 		{
@@ -23194,7 +23200,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9814.082,98.23481,12347.748};
-				angles[]={-0,4.538415,0};
+				angles[]={0,4.538415,0};
 			};
 			side="Empty";
 			flags=4;
@@ -23290,6 +23296,7 @@ class Mission
 			};
 			id=2329;
 			type="land_gm_euro_furniture_bed_02";
+			atlOffset=7.6293945e-006;
 		};
 		class Item390
 		{
@@ -23306,6 +23313,7 @@ class Mission
 			};
 			id=2330;
 			type="land_gm_euro_furniture_bed_02";
+			atlOffset=7.6293945e-006;
 		};
 		class Item391
 		{
@@ -23313,7 +23321,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9841.2324,95.39418,12344.496};
-				angles[]={-0,4.517025,0};
+				angles[]={0,4.517025,0};
 			};
 			side="Empty";
 			flags=4;
@@ -23345,7 +23353,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9837.3691,95.39418,12362.661};
-				angles[]={-0,4.517025,0};
+				angles[]={0,4.517025,0};
 			};
 			side="Empty";
 			flags=4;
@@ -23361,7 +23369,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9835.2578,95.539169,12372.896};
-				angles[]={-0,4.517025,0};
+				angles[]={0,4.517025,0};
 			};
 			side="Empty";
 			flags=4;
@@ -23393,7 +23401,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9814.4795,97.894577,12343.582};
-				angles[]={-0,3.9209304,0};
+				angles[]={0,3.9209304,0};
 			};
 			side="Empty";
 			flags=4;

@@ -31,3 +31,5 @@ class grad_wind3 {
     sound[] = {"USER\sounds\wind3.ogg",0.90,1,500};
     titles[] = {0,""};
 };
+
+#include "grad-electricFence\cfgSounds.hpp"
