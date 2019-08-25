@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9808.833,95.388252,12361.885};
-		dir[]={-0.79699409,-0.32788786,-0.50741589};
-		up[]={-0.27663419,0.94468778,-0.1761242};
-		aside[]={-0.53710204,1.3755634e-006,0.8436138};
+		pos[]={9807.9717,95.014099,12361.713};
+		dir[]={-0.459187,-0.44450089,-0.769252};
+		up[]={-0.2278492,0.89574766,-0.38170645};
+		aside[]={-0.85872704,9.4727147e-007,0.51259136};
 	};
 };
 binarizationWanted=0;
@@ -23414,7 +23414,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="call{[this, ciaContainer] call BIS_fnc_attachToRelative;}";
+				init="call{[this, ciaContainer] call BIS_fnc_attachToRelative; [this] execVM ""USER\scripts\setSwitch.sqf"";}";
 			};
 			id=2338;
 			type="Land_TransferSwitch_01_F";
