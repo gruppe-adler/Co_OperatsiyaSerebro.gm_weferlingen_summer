@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=618;
+		nextID=634;
 	};
 	class Camera
 	{
-		pos[]={17564.512,86.320496,19014.064};
-		dir[]={0.54014969,-0.39051861,-0.74552029};
-		up[]={0.22913615,0.92058748,-0.31625605};
-		aside[]={-0.80981839,2.7532224e-007,-0.58673429};
+		pos[]={17548.186,86.320496,19029.572};
+		dir[]={0.6590423,-0.4781419,-0.58061457};
+		up[]={0.35878298,0.8782751,-0.31608677};
+		aside[]={-0.6610713,3.0221418e-007,-0.75036615};
 	};
 };
 binarizationWanted=0;
@@ -9168,18 +9168,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={17567.418,62.941216,18973.785};
-				angles[]={0.0099949092,5.1503444,0.0099949092};
+				position[]={17567.418,62.941227,18973.785};
+				angles[]={0.010000736,5.1503444,0.010000736};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				lock="LOCKED";
+				init="call{if (isServer) then {this setVariable [""ace_rearm_isSupplyVehicle"",true,true]; [this,""RHS_Mi24P_vvs""] call ace_rearm_fnc_addVehicleMagazinesToSupply};}";
 			};
 			id=1686;
 			type="gm_gc_bgs_ural4320_reammo";
-			atlOffset=-1.1444092e-005;
 			class CustomAttributes
 			{
 				class Attribute0
