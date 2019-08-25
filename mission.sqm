@@ -8,11 +8,11 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=2380;
+		nextID=2381;
 	};
 	class MarkerIDProvider
 	{
-		nextID=10;
+		nextID=12;
 	};
 	class LayerIndexProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={17597.998,123.03722,18909.695};
-		dir[]={-0.33947444,-0.50605959,0.7929095};
-		up[]={-0.19918016,0.86249506,0.46522397};
-		aside[]={0.91930687,5.5821147e-008,0.39359033};
+		pos[]={17601.346,123.03722,18871.09};
+		dir[]={0.01763124,-0.50103033,0.86527574};
+		up[]={0.010207051,0.86542559,0.50093609};
+		aside[]={0.99981076,6.418486e-008,-0.020372223};
 	};
 };
 binarizationWanted=0;
@@ -3870,7 +3870,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=416;
+		items=417;
 		class Item0
 		{
 			dataType="Layer";
@@ -23492,6 +23492,16 @@ class Mission
 			};
 			id=2379;
 			type="Land_ClutterCutter_small_F";
+		};
+		class Item416
+		{
+			dataType="Marker";
+			position[]={17637.396,59.675999,18969.945};
+			name="marker_11";
+			type="mil_flag";
+			colorName="ColorEAST";
+			id=2380;
+			atlOffset=-0.00047683716;
 		};
 	};
 	class Connections
