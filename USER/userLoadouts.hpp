@@ -159,9 +159,23 @@ class gm_volksarmee {
                         LIST_8("ACE_epinephrine")
                     };
                 };
-                /* class CORPORAL {
-                    GRAD_FACTIONS_MEDICITEMS_SQ
-                }; */
+                class CORPORAL {
+                    vest = "gm_ge_army_vest_80_medic";
+                    backpack = "gm_gc_army_backpack_80_assaultpack_str";
+                    addItemsToUniform[] = {
+                        "ACE_surgicalKit"
+                    };
+                    addItemsToBackpack[] = {
+                        LIST_4("ACE_salineIV"),
+                        LIST_8("ACE_salineIV_500"),
+                        LIST_20("ACE_elasticBandage"),
+                        LIST_20("ACE_packingBandage"),
+                        LIST_20("ACE_quikclot"),
+                        LIST_8("ACE_tourniquet"),
+                        LIST_25("ACE_morphine"),
+                        LIST_25("ACE_epinephrine")
+                    };
+                }; 
                 class SERGEANT {
                     vest = "gm_ge_army_vest_80_medic";
                     backpack = "gm_gc_army_backpack_80_assaultpack_str";

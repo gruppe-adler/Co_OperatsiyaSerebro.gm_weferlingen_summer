@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=2315;
+		nextID=2316;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9806.9307,116.66547,12414.646};
-		dir[]={0.11279301,-0.63672662,-0.76281512};
-		up[]={0.093136862,0.77108777,-0.62988198};
-		aside[]={-0.98925954,4.6897912e-007,-0.14627449};
+		pos[]={17609.834,73.534935,18966.586};
+		dir[]={0.19657762,-0.54361486,0.81600136};
+		up[]={0.12731716,0.8393299,0.52849668};
+		aside[]={0.97219425,-4.5460183e-008,-0.23420475};
 	};
 };
 binarizationWanted=0;
@@ -6043,12 +6043,13 @@ class Mission
 							class PositionInfo
 							{
 								position[]={17607.619,59.734943,18983.176};
-								angles[]={0.0099949092,3.4905021,6.2812018};
+								angles[]={0.010000736,3.4905014,6.2811952};
 							};
 							side="East";
 							flags=4;
 							class Attributes
 							{
+								rank="CORPORAL";
 								description="Sanitäter";
 								isPlayable=1;
 							};
@@ -6319,8 +6320,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={17603.494,59.72633,18984.439};
-								angles[]={0,3.4905021,0};
+								position[]={17603.494,59.726326,18984.439};
+								angles[]={0,3.4905014,0};
 							};
 							side="East";
 							flags=5;
@@ -6332,6 +6333,7 @@ class Mission
 							};
 							id=2036;
 							type="O_medic_F";
+							atlOffset=-3.8146973e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -7106,12 +7108,13 @@ class Mission
 							class PositionInfo
 							{
 								position[]={17596.004,59.702248,18987.449};
-								angles[]={0.0079935296,3.4905021,0};
+								angles[]={0.0079936078,3.4905014,0};
 							};
 							side="East";
 							flags=4;
 							class Attributes
 							{
+								rank="CORPORAL";
 								description="Sanitäter";
 								isPlayable=1;
 							};
