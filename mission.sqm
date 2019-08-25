@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=522;
+		nextID=538;
 	};
 	class Camera
 	{
-		pos[]={18016.668,80.514206,19874.596};
-		dir[]={-0.056769118,-0.33012092,0.94224298};
-		up[]={-0.019853612,0.9439379,0.32952705};
-		aside[]={0.99820381,-4.9039954e-008,0.060140878};
+		pos[]={17623.914,66.95134,18964.635};
+		dir[]={-0.65224302,-0.35183817,0.67142361};
+		up[]={-0.24516365,0.93605679,0.25237396};
+		aside[]={0.71728593,-2.2235326e-007,0.69679528};
 	};
 };
 binarizationWanted=0;
@@ -5614,12 +5614,13 @@ class Mission
 							class PositionInfo
 							{
 								position[]={17611.379,59.745544,18981.088};
-								angles[]={0,3.4905021,0};
+								angles[]={0,3.4905014,0};
 							};
 							side="East";
 							flags=5;
 							class Attributes
 							{
+								init="call{if (isServer) then {private _factor = 0.2; [this,_factor] call grad_fortifications_fnc_setBuildTimeFactor; [this,_factor] call grad_fortifications_fnc_setDemolishTimeFactor; [this,_factor] call grad_fortifications_fnc_setPackUpTimeFactor};}";
 								description="Techniker";
 								isPlayable=1;
 							};

@@ -4,10 +4,10 @@
 */
 
 canDemolishDefault = 1;
-buildTimeFactor = 0.5;
-packUpTimeFactor = 0.5;
+buildTimeFactor = 2;
+packUpTimeFactor = 2;
 fortificationOwnerType = "SIDE";
-demolitionTimeFactor = 1.4;
+demolitionTimeFactor = 2;
 
 class Fortifications {
 
