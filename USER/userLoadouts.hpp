@@ -33,11 +33,11 @@ class gm_volksarmee {
 		vest = "gm_dk_army_vest_54_rifleman";
 		backpack = "";
 		headgear[] = {"gm_gc_army_headgear_m56","gm_gc_army_headgear_m56_net"};
-		primaryWeapon[] = {"gm_mpiaks74nk_brn","gm_mpiaks74nk_prp"};
-        primaryWeaponMagazine = "gm_30Rnd_545x39mm_B_7N6_ak74_prp";
+		primaryWeapon[] = {"rhs_weap_akms"};
+        primaryWeaponMagazine = "rhs_30Rnd_762x39mm_bakelite_tracer";
 		primaryWeaponOptics = "";
-		primaryWeaponPointer = LLITEM;
-		primaryWeaponMuzzle = SUPPRESSORITEM;
+		primaryWeaponPointer = "rhs_acc_2dpZenit";
+		primaryWeaponMuzzle = "rhs_acc_pbs1";
         primaryWeaponUnderbarrel = "";
 		primaryWeaponUnderbarrelMagazine = "";
         secondaryWeapon = "";
@@ -71,10 +71,10 @@ class gm_volksarmee {
             addItemsToVest[] = {
                 LIST_2("gm_handgrenade_frag_rgd5"),
                 LIST_2("rhs_mag_rdg2_white"),
-                LIST_7("gm_30Rnd_545x39mm_B_7N6_ak74_prp"),
-                LIST_4("ACE_HandFlare_Green"),
-                LIST_4("ACE_HandFlare_Red"),
-                LIST_4("ACE_HandFlare_White")
+                LIST_7("rhs_30Rnd_762x39mm_bakelite_tracer"),
+                LIST_2("ACE_HandFlare_Green"),
+                LIST_2("ACE_HandFlare_Red"),
+                LIST_2("ACE_HandFlare_White")
             };
         };
 
@@ -137,7 +137,7 @@ class gm_volksarmee {
             };
             addItemsToVest[] = {
                 LIST_2("rhs_mag_rdg2_white"),
-                LIST_6("gm_30Rnd_545x39mm_B_7N6_ak74_prp")
+                LIST_6("rhs_30Rnd_762x39mm_bakelite_tracer")
             };
 
             /*
@@ -298,8 +298,18 @@ class gm_volksarmee {
 
         //Squad Leader
         class Soldier_SL_F: Soldier_F {
+            weapon="rhs_weap_akms_gp25";
             vest = "gm_gc_army_vest_80_leader_str";
             watch = "gm_watch_kosei_80";
+
+            addItemsToVest[] = {
+                LIST_2("gm_handgrenade_frag_rgd5"),
+                LIST_4("rhs_mag_rdg2_white"),
+                LIST_7("rhs_30Rnd_762x39mm_bakelite_tracer"),
+                LIST_4("rhs_VG40OP_green"),
+                LIST_4("rhs_VG40OP_red"),
+                LIST_4("rhs_VG40OP_white")
+            };
 
             class Rank {
                 // Funker
@@ -311,10 +321,14 @@ class gm_volksarmee {
 
         //Team Leader
         class Soldier_TL_F: Soldier_F {
+            weapon="rhs_weap_akms_gp25";
             addItemsToVest[] = {
                 LIST_2("gm_handgrenade_frag_rgd5"),
                 LIST_4("rhs_mag_rdg2_white"),
-                LIST_7("gm_30Rnd_545x39mm_B_7N6_ak74_prp")
+                LIST_7("rhs_30Rnd_762x39mm_bakelite_tracer"),
+                LIST_4("rhs_VG40OP_green"),
+                LIST_4("rhs_VG40OP_red"),
+                LIST_4("rhs_VG40OP_white")
             };
         };
 
