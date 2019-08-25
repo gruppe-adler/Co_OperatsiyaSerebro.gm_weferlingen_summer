@@ -298,7 +298,7 @@ class gm_volksarmee {
 
         //Squad Leader
         class Soldier_SL_F: Soldier_F {
-            weapon="rhs_weap_akms_gp25";
+            primaryWeapon = "rhs_weap_akms_gp25";
             vest = "gm_gc_army_vest_80_leader_str";
             watch = "gm_watch_kosei_80";
 
@@ -321,7 +321,7 @@ class gm_volksarmee {
 
         //Team Leader
         class Soldier_TL_F: Soldier_F {
-            weapon="rhs_weap_akms_gp25";
+            primaryWeapon="rhs_weap_akms_gp25";
             addItemsToVest[] = {
                 LIST_2("gm_handgrenade_frag_rgd5"),
                 LIST_4("rhs_mag_rdg2_white"),
