@@ -33,7 +33,7 @@ if (!isServer) exitWith {};
 private _definitions = [
 	["FREE", getPos introPos0, getPos introPos0_1, vopo_trabant, vopo_trabant, 47, 0, 0.3, 0.4, [0,0,2], [0,0,7]],
 	["FREE", getPos introPos3, getPos introPos4, introTarget3, introTarget4, 30, 0, 0.3, 0.4, [0,0,1.3], [0,0,1.4]],
-	["FREE", getPos introPos1, getPos introPos2, introTarget1, introTarget2, 7, 0, 0.4, 0.5, [0,0,1.3], [0,0,7]]
+	["FREE", getPos introPos4, getPos introPos2, introTarget4, introTarget2, 14, 0, 0.4, 0.7, [0,0,1.4], [0,0,10]]
 ];
 
 /*
