@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=2340;
+		nextID=2344;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9831.2588,97.317711,12360.977};
-		dir[]={-0.14132868,-0.37914002,0.91451836};
-		up[]={-0.05790817,0.92532426,0.37471747};
-		aside[]={0.98829514,-6.3842162e-007,0.15272868};
+		pos[]={9812.374,95.891304,12349.756};
+		dir[]={-0.032516427,-0.67549586,-0.73675114};
+		up[]={-0.029784126,0.73734784,-0.67485148};
+		aside[]={-0.99909705,1.924891e-007,0.044097878};
 	};
 };
 binarizationWanted=0;
@@ -104,13 +104,16 @@ addons[]=
 	"gm_weapons_launchers_milan",
 	"A3_Structures_F_Enoch_Industrial_Cargo",
 	"A3_Props_F_Enoch_Items_Documents",
-	"A3_Props_F_Enoch_Industrial_Electric"
+	"A3_Props_F_Enoch_Industrial_Electric",
+	"A3_Supplies_F_Exp_Ammoboxes",
+	"ace_dragging",
+	"gm_weapons_launchers_carlgustaf"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=67;
+		items=70;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -560,6 +563,27 @@ class AddonsMetaData
 			name="Arma 3 Enoch - Industrial Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
+		};
+		class Item67
+		{
+			className="A3_Supplies_F_Exp";
+			name="Arma 3 Apex - Ammoboxes and Supplies";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item68
+		{
+			className="ace_dragging";
+			name="ACE3 - Dragging";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item69
+		{
+			className="gm_weapons_launchers_carlgustaf";
+			name="gm_weapons_launchers_carlgustaf";
+			author="Global Mobilization";
+			url="global-mobilization.com";
 		};
 	};
 };
@@ -3657,7 +3681,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=399;
+		items=402;
 		class Item0
 		{
 			dataType="Layer";
@@ -16729,7 +16753,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9822.0176,97.589417,12357.882};
+				position[]={9822.0176,96.589417,12357.882};
 			};
 			side="Empty";
 			flags=5;
@@ -16739,13 +16763,14 @@ class Mission
 			};
 			id=1986;
 			type="jbad_Misc_Cable";
+			atlOffset=-1;
 		};
 		class Item209
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9821.6338,97.589417,12361.198};
+				position[]={9821.6338,96.589417,12361.198};
 				angles[]={0,2.7351925,0};
 			};
 			side="Empty";
@@ -16756,6 +16781,7 @@ class Mission
 			};
 			id=1989;
 			type="jbad_Misc_Cable";
+			atlOffset=-1;
 		};
 		class Item210
 		{
@@ -22923,15 +22949,16 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9814.5254,94.11364,12349.857};
+				position[]={9810.8779,93.690002,12347.521};
 			};
 			side="Empty";
 			class Attributes
 			{
+				disableSimulation=1;
 			};
 			id=2322;
 			type="gm_milan_launcher_weaponBag";
-			atlOffset=0.42362976;
+			atlOffset=0.47000122;
 		};
 		class Item384
 		{
@@ -23368,8 +23395,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9835.2578,95.539169,12372.896};
-				angles[]={0,4.517025,0};
+				position[]={9835.2578,95.394173,12372.896};
+				angles[]={-0,4.517025,0};
 			};
 			side="Empty";
 			flags=4;
@@ -23378,7 +23405,6 @@ class Mission
 			};
 			id=2335;
 			type="Land_Cargo20_EMP_Training_F";
-			atlOffset=0.14499664;
 		};
 		class Item395
 		{
@@ -23523,6 +23549,78 @@ class Mission
 			id=2339;
 			type="land_gm_euro_furniture_lampfixture_03";
 			atlOffset=0.81200409;
+		};
+		class Item399
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9814.8643,93.900536,12351.09};
+				angles[]={0,1.3101939,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2341;
+			type="Box_IED_Exp_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""rhs_charge_tnt_x2_mag"",""rhs_ec400_mag""],[4,6]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item400
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9811.4277,93.69001,12347.197};
+				angles[]={0,3.032371,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2342;
+			type="CUP_metalcase_02";
+		};
+		class Item401
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9811.3955,94.313034,12347.224};
+				angles[]={5.9553404,0,4.7726412};
+			};
+			side="Empty";
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=2343;
+			type="gm_placeableweapon_pzf84_oli";
+			atlOffset=0.62302399;
 		};
 	};
 	class Connections
