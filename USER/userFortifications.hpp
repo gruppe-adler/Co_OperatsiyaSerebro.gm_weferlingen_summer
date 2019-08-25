@@ -8,6 +8,7 @@ buildTimeFactor = 2;
 packUpTimeFactor = 2;
 fortificationOwnerType = "SIDE";
 demolitionTimeFactor = 2;
+playerInventorySize = 999999;
 
 class Fortifications {
 
