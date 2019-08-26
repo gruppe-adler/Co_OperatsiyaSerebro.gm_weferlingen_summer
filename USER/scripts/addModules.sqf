@@ -111,4 +111,36 @@ if (
 
     }] call Ares_fnc_RegisterCustomModule;
 
+    ["CO TAFELSILBER", "Bluforize Police Group",
+    {
+        params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+        if (isNull _objectUnderCursor) exitWith {
+            [objNull,"Error: Nothing selected."] call BIS_fnc_showCuratorFeedbackMessage;
+        };
+
+        if (side _objectUnderCursor != CIVILIAN) exitWith {
+            [objNull,"Error: Selected object is not civilian."] call BIS_fnc_showCuratorFeedbackMessage;
+        };
+
+        [[group _objectUnderCursor],{
+            params [["_oldGrp",grpNull]];
+
+            if (isNull _oldGrp) exitWith {
+                [objNull,"Error: Selected object does not have a group."] remoteExec ["BIS_fnc_showCuratorFeedbackMessage",remoteExecutedOwner,false];
+            };
+
+            {
+                _x addWeapon "gm_p1_blk";
+                _x addHandgunItem "gm_8Rnd_9x19mm_B_DM11_p1_blk";
+                for "_i" from 1 to 8 do {_x addItemToUniform "gm_8Rnd_9x19mm_B_DM11_p1_blk";};
+            } forEach (units _oldGrp);
+
+            private _newGrp = createGroup WEST;
+            (units _oldGrp) joinSilent _newGrp;
+        }] remoteExecCall ["call",2,false];
+
+
+    }] call Ares_fnc_RegisterCustomModule;
+
 };
