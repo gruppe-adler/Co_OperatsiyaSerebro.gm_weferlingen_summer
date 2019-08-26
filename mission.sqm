@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=698;
+		nextID=714;
 	};
 	class Camera
 	{
-		pos[]={18144.164,122.00532,20007.104};
-		dir[]={-0.42549375,-0.6285755,0.65104854};
-		up[]={-0.34388021,0.77774733,0.52617067};
-		aside[]={0.83708847,-2.8236536e-007,0.54708141};
+		pos[]={9818.7227,106.95592,12389.006};
+		dir[]={-0.22781734,-0.45090625,-0.86308926};
+		up[]={-0.11508217,0.89254951,-0.43599722};
+		aside[]={-0.96695572,-6.7451037e-007,0.25523132};
 	};
 };
 binarizationWanted=0;
@@ -23137,7 +23137,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={18097.285,58.532509,20109.76};
-				angles[]={-0,3.5864072,0};
+				angles[]={0,3.5864072,0};
 			};
 			side="Civilian";
 			flags=4;
@@ -23148,6 +23148,7 @@ class Mission
 			};
 			id=2368;
 			type="gm_gc_bgs_p601";
+			atlOffset=-6.4849854e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23394,7 +23395,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={18097.279,56.911438,20109.797};
-						angles[]={-0,3.5864072,0};
+						angles[]={0,3.5864072,0};
 					};
 					side="Civilian";
 					flags=7;
@@ -23424,7 +23425,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={18097.279,56.911438,20109.797};
-						angles[]={-0,3.5864072,0};
+						angles[]={0,3.5864072,0};
 					};
 					side="Civilian";
 					flags=5;
@@ -23500,6 +23501,7 @@ class Mission
 				};
 			};
 			id=2373;
+			atlOffset=-6.4849854e-005;
 		};
 		class Item413
 		{
@@ -23550,11 +23552,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=111;
+			nextID=114;
 		};
 		class Links
 		{
-			items=111;
+			items=114;
 			class Item0
 			{
 				linkID=0;
@@ -24659,6 +24661,36 @@ class Mission
 			{
 				linkID=110;
 				item0=2123;
+				item1=1627;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item111
+			{
+				linkID=111;
+				item0=2164;
+				item1=1627;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item112
+			{
+				linkID=112;
+				item0=1785;
+				item1=1627;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item113
+			{
+				linkID=113;
+				item0=2338;
 				item1=1627;
 				class CustomData
 				{
