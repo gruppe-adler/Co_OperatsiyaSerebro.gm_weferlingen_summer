@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=714;
+		nextID=730;
 	};
 	class Camera
 	{
-		pos[]={9818.7227,106.95592,12389.006};
-		dir[]={-0.22781734,-0.45090625,-0.86308926};
-		up[]={-0.11508217,0.89254951,-0.43599722};
-		aside[]={-0.96695572,-6.7451037e-007,0.25523132};
+		pos[]={9486.0117,131.59717,16114.387};
+		dir[]={0.73200625,-0.38246754,0.56381702};
+		up[]={0.30300626,0.92396879,0.23338619};
+		aside[]={0.61021221,-3.4924597e-009,-0.79224139};
 	};
 };
 binarizationWanted=0;
@@ -18619,6 +18619,7 @@ class Mission
 			};
 			class Attributes
 			{
+				behaviour="CARELESS";
 			};
 			class CrewLinks
 			{
@@ -19676,7 +19677,7 @@ class Mission
 			};
 			class Attributes
 			{
-				behaviour="SAFE";
+				behaviour="CARELESS";
 				formation="COLUMN";
 			};
 			class CrewLinks
@@ -20041,7 +20042,7 @@ class Mission
 			};
 			class Attributes
 			{
-				behaviour="SAFE";
+				behaviour="CARELESS";
 				formation="COLUMN";
 			};
 			class CrewLinks
