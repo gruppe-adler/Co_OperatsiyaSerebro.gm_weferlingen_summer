@@ -181,4 +181,12 @@ if (
 
     }] call Ares_fnc_RegisterCustomModule;
 
+    ["CO TAFELSILBER", "Turn off Generator",
+    {
+        params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+        [_objectUnderCursor] setVariable ["GRAD_electricFence_generatorActive", false, true];
+        [objNull,format ["%1 turned off.",_objectUnderCursor]] call BIS_fnc_showCuratorFeedbackMessage;
+    }] call Ares_fnc_RegisterCustomModule;
+
 };
