@@ -139,7 +139,45 @@ if (
             private _newGrp = createGroup WEST;
             (units _oldGrp) joinSilent _newGrp;
         }] remoteExecCall ["call",2,false];
+    }] call Ares_fnc_RegisterCustomModule;
 
+    ["CO TAFELSILBER", "Toggle Blaulicht",
+    {
+        params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+        if (isNull _objectUnderCursor) exitWith {
+            [objNull,"Error: Nothing selected."] call BIS_fnc_showCuratorFeedbackMessage;
+        };
+
+        // KAEFER
+        if (typeOf _objectUnderCursor in ["gm_ge_ff_typ1200","gm_ge_pol_typ1200"]) exitWith {
+            if (_objectUnderCursor getVariable ["IC_vopo_blaulicht",false]) then {
+                _objectUnderCursor setVariable ["IC_vopo_blaulicht",false,true];
+            } else {
+                [[_objectUnderCursor],{
+                    params [["_objectUnderCursor",objNull]];
+
+                    _objectUnderCursor setVariable ["IC_vopo_blaulicht",true];
+                    [_objectUnderCursor] call grad_vopo_fnc_blaulichtKaefer;
+                }] remoteExecCall ["call",2,false];
+            };
+        };
+
+        // TRABBI
+        if (typeOf _objectUnderCursor in ["gm_gc_bgs_p601","gm_gc_army_p601","gm_gc_ff_p601","gm_gc_pol_p601"]) exitWith {
+            if (_objectUnderCursor getVariable ["IC_vopo_blaulicht",false]) then {
+                _objectUnderCursor setVariable ["IC_vopo_blaulicht",false,true];
+            } else {
+                [[_objectUnderCursor],{
+                    params [["_objectUnderCursor",objNull]];
+
+                    _objectUnderCursor setVariable ["IC_vopo_blaulicht",true];
+                    [_objectUnderCursor] call grad_vopo_fnc_blaulichtTrabant;
+                }] remoteExecCall ["call",2,false];
+            };
+        };
+
+        [objNull,"Error: Invalid vehicle."] call BIS_fnc_showCuratorFeedbackMessage;
 
     }] call Ares_fnc_RegisterCustomModule;
 
