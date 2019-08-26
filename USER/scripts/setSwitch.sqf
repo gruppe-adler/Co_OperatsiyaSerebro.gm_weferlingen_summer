@@ -43,6 +43,10 @@ _vehicle addAction [
                  [_x, position _x] spawn GRAD_electricFence_fnc_sparkLarge;
             };
         } forEach ((position _target) nearObjects 20);
+        
+        private _identifier = format ["GRAD_electricFenceGenerator_%1", 0];
+        private _existingGenerators = missionNamespace getVariable [_identifier, []];
+        (_existingGenerators select 0) setVariable ['GRAD_electricFence_generatorActive', false, true];
     },
     [],
     1.5, 
@@ -78,6 +82,10 @@ _vehicle addAction [
                   _x enableSimulationGlobal true;
             };  
         } forEach ((position _target) nearObjects 20);
+        
+        private _identifier = format ["GRAD_electricFenceGenerator_%1", 0];
+        private _existingGenerators = missionNamespace getVariable [_identifier, []];
+        (_existingGenerators select 0) setVariable ['GRAD_electricFence_generatorActive', true, true];
     }, 
     [], 
     1.5,  
