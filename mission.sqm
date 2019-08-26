@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=730;
+		nextID=746;
 	};
 	class Camera
 	{
-		pos[]={9486.0117,131.59717,16114.387};
-		dir[]={0.73200625,-0.38246754,0.56381702};
-		up[]={0.30300626,0.92396879,0.23338619};
-		aside[]={0.61021221,-3.4924597e-009,-0.79224139};
+		pos[]={18010.824,83.881241,19826.246};
+		dir[]={-0.43850988,-0.31422412,-0.84202784};
+		up[]={-0.14513992,0.9493463,-0.27869788};
+		aside[]={-0.88695049,1.0784424e-007,0.46190366};
 	};
 };
 binarizationWanted=0;
@@ -23137,8 +23137,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={18097.285,58.532509,20109.76};
-				angles[]={0,3.5864072,0};
+				position[]={18182.238,57.775272,20284.555};
+				angles[]={6.2791886,3.5864072,0.0019834081};
 			};
 			side="Civilian";
 			flags=4;
@@ -23149,7 +23149,6 @@ class Mission
 			};
 			id=2368;
 			type="gm_gc_bgs_p601";
-			atlOffset=-6.4849854e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23395,8 +23394,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={18097.279,56.911438,20109.797};
-						angles[]={0,3.5864072,0};
+						position[]={18182.238,56.154137,20284.605};
+						angles[]={6.2791886,3.5864072,0.0019834081};
 					};
 					side="Civilian";
 					flags=7;
@@ -23425,8 +23424,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={18097.279,56.911438,20109.797};
-						angles[]={0,3.5864072,0};
+						position[]={18182.238,56.154137,20284.605};
+						angles[]={6.2791886,3.5864072,0.0019834081};
 					};
 					side="Civilian";
 					flags=5;
@@ -23502,15 +23501,14 @@ class Mission
 				};
 			};
 			id=2373;
-			atlOffset=-6.4849854e-005;
 		};
 		class Item413
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={18151.297,56.091888,20078.35};
-				angles[]={6.2812018,0,0.0039967569};
+				position[]={18080.705,57.304756,20033.256};
+				angles[]={0.037981652,0,0.012000273};
 			};
 			side="Empty";
 			flags=4;
